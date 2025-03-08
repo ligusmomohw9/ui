@@ -3,7 +3,7 @@ import chalk from "chalk"
 
 function getInvoker() {
   const args = process.argv.slice(2)
-  const env = process.env
+  const { env } = process
   const npmExecPath = env.npm_execpath || ""
   const packageName = "shadcn@latest"
 
